@@ -1,5 +1,18 @@
-﻿@{ 
+﻿@model ASP_Blog.ViewModels.AuthLogin
+
+@{ 
     ViewBag.Title = "Login";
 }
 
-<p>This is the login view!</p>
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(x => x.Username)
+        @Html.EditorFor(x => x.Username)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
+    </div>
+}
+
