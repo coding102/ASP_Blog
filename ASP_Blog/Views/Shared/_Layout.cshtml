@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title - ASP_Blog</title>
+    <title>@ViewBag.Title - ASP-Blog</title>
 </head>
 <body>
     <header>
@@ -20,5 +20,11 @@
 
     <!--INSERT VIEW HERE!-->
     @RenderBody()
+
+    <footer>
+       &copy; @DateTime.UtcNow.Year - Me
+    </footer>
+    <!--Render script in view and botton of body-->
+    @RenderSection("Scripts", false)
 </body>
 </html>
