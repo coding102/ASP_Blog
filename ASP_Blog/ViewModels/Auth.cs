@@ -1,8 +1,13 @@
-﻿namespace ASP_Blog.ViewModels
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ASP_Blog.ViewModels
 {
     public class AuthLogin
     {
+        [Required]
         public string Username { get; set; }
+
+        [Required, DataType(DataType.Password)]
         public string Password { get; set; }
     }
 }
