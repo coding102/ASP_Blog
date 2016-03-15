@@ -132,6 +132,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\RoleProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\Auth.cs" />
   </ItemGroup>
@@ -160,6 +161,7 @@
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\Admin\Views\Users\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\RoleProvider\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

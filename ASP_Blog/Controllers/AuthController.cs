@@ -3,12 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using ASP_Blog.ViewModels;
 
 namespace ASP_Blog.Controllers
 {
     public class AuthController : Controller
     {
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToRoute("home");
+        }
+
         public ActionResult Login()
         {
             return View(new AuthLogin
@@ -17,18 +25,16 @@ namespace ASP_Blog.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(AuthLogin form)
+        public ActionResult Login(AuthLogin form, string returnUrl)
         {
             if(!ModelState.IsValid)
                 return View(form);
 
-            if (form.Username != "rainbow")
-            {
-                ModelState.AddModelError("username", "username or password isn't correct");
-                return View(form);
-            }
+            FormsAuthentication.SetAuthCookie(form.Username, true);
 
-            return Content("The form is valid!");
+            if (!string.IsNullOrWhiteSpace(returnUrl))
+                return Redirect(returnUrl);
+            return RedirectToRoute("home");
         }
     }
 }
