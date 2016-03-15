@@ -58,4 +58,10 @@ C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\System.Web.Helpers.xml
 C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\System.Web.Mvc.xml
 C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\obj\Debug\ASP_Blog.dll
 C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\obj\Debug\ASP_Blog.pdb
-C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\obj\Debug\ASP_Blog.csprojResolveAssemblyReference.cache
+C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\Antlr3.Runtime.dll
+C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\Newtonsoft.Json.dll
+C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\System.Web.Optimization.dll
+C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\WebGrease.dll
+C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\Antlr3.Runtime.pdb
+C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\Newtonsoft.Json.xml
+C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\System.Web.Optimization.xml
