@@ -22,6 +22,12 @@ namespace ASP_Blog.Controllers
             if(!ModelState.IsValid)
                 return View(form);
 
+            if (form.Username != "rainbow")
+            {
+                ModelState.AddModelError("username", "username or password isn't correct");
+                return View(form);
+            }
+
             return Content("The form is valid!");
         }
     }
