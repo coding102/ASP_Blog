@@ -16,6 +16,7 @@
     <header>
         <h1>
             <a href="@Url.RouteUrl("home")">Simple Blog</a>
+            <i class="glyphicon glyphicon-bell"></i>
         </h1>
 
         @if (User.Identity.IsAuthenticated)
@@ -41,6 +42,8 @@
     <footer>
        &copy; @DateTime.UtcNow.Year - Me
     </footer>
+
+    @Scripts.Render("~/scripts")
     <!--Render script in view and botton of body-->
     @RenderSection("Scripts", false)
 </body>

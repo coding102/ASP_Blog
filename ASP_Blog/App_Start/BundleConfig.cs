@@ -13,6 +13,18 @@ namespace ASP_Blog
             bundles.Add(new StyleBundle("~/styles")
                 .Include("~/content/Styles/bootstrap.css")
                 .Include("~/content/Styles/site.css"));
+
+            bundles.Add(new ScriptBundle("~/admin/scripts")
+                .Include("~/scripts/jquery-2.2.1.js")
+                .Include("~/scripts/jquery.validate.js")
+                .Include("~/scripts/jquery.validate.unobtrusive.js")
+                .Include("~/scripts/bootstrap.js"));
+
+            bundles.Add(new ScriptBundle("~/scripts")
+               .Include("~/scripts/jquery-2.2.1.js")
+               .Include("~/scripts/jquery.validate.js")
+               .Include("~/scripts/jquery.validate.unobtrusive.js")
+               .Include("~/scripts/bootstrap.js"));
         }
     }
 }
