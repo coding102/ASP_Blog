@@ -65,4 +65,3 @@ C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\WebGrease.dll
 C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\Antlr3.Runtime.pdb
 C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\Newtonsoft.Json.xml
 C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\bin\System.Web.Optimization.xml
-C:\Users\mark\Desktop\ASP_Blog\ASP_Blog\obj\Debug\ASP_Blog.csprojResolveAssemblyReference.cache

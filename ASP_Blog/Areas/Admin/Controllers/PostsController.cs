@@ -11,7 +11,7 @@ namespace ASP_Blog.Areas.Admin.Controllers
     {
         public ActionResult Index ()
         {
-            return Content("ADMIN POSTS");
+            return View();
         }
     }
 }
