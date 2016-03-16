@@ -4,6 +4,13 @@
     Layout = null;
 }
 
+@helper SelectedTabClass(string tabName) { 
+    if (tabName == ViewBag.SelectedTab)
+    {
+        @: active
+    }
+}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,13 +24,19 @@
     <div class="container">
         <ul class="nav nav-pills">
             <!--title of link Posts, action is Index, controller is Posts, and area is admin-->
-            <li>@Html.ActionLink("Posts", "Index", "Posts", new { area = "admin" }, new {}) </li>
-            <li>@Html.ActionLink("Users", "Index", "Users", new { area = "admin" }, new {})</li>
+            <li class="@SelectedTabClass("posts")">
+                @Html.ActionLink("Posts", "Index", "Posts", new { area = "admin" }, new {}) 
+            </li>
+
+            <li class="@SelectedTabClass("users")">
+                @Html.ActionLink("Users", "Index", "Users", new { area = "admin" }, new {})
+            </li>
+
             <li class="pull-right">@Html.RouteLink("Back to Website", "Home")</li>
         </ul>
         <!--INSERT VIEW HERE!-->
         @RenderBody()
-    </div
+    </div>
     @Scripts.Render("~/admin/scripts")
     @RenderSection("Scripts", false)
 </body>
